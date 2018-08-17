@@ -71,5 +71,16 @@ $
 
 Note: this takes 12 seconds since the input file is very large and valgrind has to keep track of a LOT of memory. In normal usage on this virtual machine, this program can find the convex hull of one million points in roughly half a second (without optimizations enabled for the compiler).
 
+## Visualizing the Convex Hull
+Included is a Python 3 script called `visualize.py`. This script will plot the randomly generated points made by the `gen_point_data.py` script, then draw the convex hull. Below showcases an example:
+
+```
+$ python3 gen_point_data.py 20
+$ python3 visualize.py
+```
+
+![alt text](convex_hull_visualization_example.png "Example visualization with 20 random points")
+
+
 ## Credit
 This implementation is heavily derived from the C++ implementation by Manish Bhojasia written on Sanfoundry. You can find his work [here](https://www.sanfoundry.com/cpp-program-implement-graham-scan-algorithm-find-convex-hull/).
